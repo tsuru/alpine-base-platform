@@ -1,0 +1,4 @@
+#!/bin/sh
+
+APP_DIR=/home/application
+CURRENT_DIR=${APP_DIR}/current
