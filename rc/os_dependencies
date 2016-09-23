@@ -1,0 +1,7 @@
+#!/bin/sh -el
+
+function os_dependencies() {
+    if [ -f ${CURRENT_DIR}/requirements.apk ]; then
+        apk add $(cat ${CURRENT_DIR}/requirements.apk)
+    fi
+}
