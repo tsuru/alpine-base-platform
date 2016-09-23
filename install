@@ -6,4 +6,4 @@ source ${SOURCE_DIR}/base/rc/config
 mkdir -p /home/application
 
 apk update
-apk add jq rsync vim
+apk add jq rsync vim curl
