@@ -4,6 +4,10 @@ SOURCE_DIR=/var/lib/tsuru
 source ${SOURCE_DIR}/base/rc/config
 
 mkdir -p /home/application
+adduser -D -s /bin/sh ${USER}
+chown ${USER}:${USER} /home/application
+
+echo "${USER} ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
 
 apk update
 apk add jq rsync vim curl
