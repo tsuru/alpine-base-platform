@@ -14,7 +14,7 @@ apk add jq rsync vim curl bash
 
 wget https://github.com/tsuru/deploy-agent/releases/download/0.2.2/deploy-agent-0.2.2.tar.gz
 tar zxvf deploy-agent-0.2.2.tar.gz
-mv deploy-agent /usr/sbin
+mv deploy-agent /usr/sbin/tsuru_unit_agent
 rm deploy-agent-0.2.2.tar.gz
 
 mkdir -p ${SOURCE_DIR}/default
