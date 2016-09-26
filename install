@@ -10,7 +10,7 @@ chown ${USER}:${USER} /home/application
 echo "${USER} ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
 
 apk update
-apk add jq rsync vim curl bash
+apk add jq rsync vim curl bash sudo
 
 wget https://github.com/tsuru/deploy-agent/releases/download/0.2.2/deploy-agent-0.2.2.tar.gz
 tar zxvf deploy-agent-0.2.2.tar.gz
