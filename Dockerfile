@@ -1,4 +1,4 @@
-FROM alpine:3.2
+FROM alpine:3.4
 
 RUN	mkdir -p /var/lib/tsuru/base
 ADD	. /var/lib/tsuru/base
