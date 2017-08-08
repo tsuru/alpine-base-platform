@@ -1,6 +1,5 @@
-FROM alpine:3.4
+FROM alpine:3.6
 
-RUN	mkdir -p /var/lib/tsuru/base
+RUN apk add --no-cache jq rsync vim curl bash sudo ca-certificates wget
 ADD	. /var/lib/tsuru/base
-RUN apk update && apk add jq rsync vim curl bash sudo ca-certificates wget
 RUN	/var/lib/tsuru/base/install

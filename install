@@ -9,9 +9,9 @@ chown ${USER}:${USER} /home/application
 
 echo "${USER} ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
 
-wget https://github.com/tsuru/deploy-agent/releases/download/0.2.2/deploy-agent-0.2.2.tar.gz
-tar zxvf deploy-agent-0.2.2.tar.gz
-mv deploy-agent /usr/sbin/tsuru_unit_agent
-rm deploy-agent-0.2.2.tar.gz
+wget https://github.com/tsuru/deploy-agent/releases/download/0.2.5/deploy-agent_0.2.5_linux_amd64.tar.gz
+tar zxvf deploy-agent_0.2.5_linux_amd64.tar.gz
+mv tsuru_unit_agent /usr/sbin/tsuru_unit_agent
+rm deploy-agent_0.2.5_linux_amd64.tar.gz
 
 mkdir -p ${SOURCE_DIR}/default
